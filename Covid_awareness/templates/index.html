@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div>
+  <center>
+  
+    <h1 class="w3-jumbo w3-animate-top">Covid 19 in Cambodia</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+  <div class="covid">
+    <p class="case">Coronavirus Cases:<br> 1,505</p>
+    <p class="case">Deaths <br> 1</p>
+    <p class="case">Recovered: <br> 840</p>
+  </div>
+  </center>
+  <center>
+    <button class="button button5"><a href='/symtoms-analysis/'>Check Your Symtoms</a></button>
+    <button class="button button5"><a href='/hospital/'>Find Hospital</a></button>
+  </center>
+  <div class="video">
+    <div clas="1" style="padding-top: 100px;">
+      <iframe width="420" height="315" src="https://www.youtube.com/embed/X-shy8hMwq0" frameborder="50"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen style="display: block;"></iframe>
+    </div>
+    <div clas="2" style="padding-top: 100px;">
+      <iframe width="420" height="315" src="https://www.youtube.com/embed/X-shy8hMwq0" frameborder="50"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen style="display: block;"></iframe>
+    </div>
+    <div clas="2" style="padding-top: 100px;">
+      <iframe width="420" height="315" src="https://www.youtube.com/embed/X-shy8hMwq0" frameborder="50"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen style="display: block;"></iframe>
+    </div>
+  </div>
+  <!-- text -->
+  <div style="padding: 100px;">
+    <div class="sf-accordion__trigger-panel">
+      <a href="#" class="sf-accordion__link">
+        Are there treatments for COVID-19?
+      </a>
+    </div>
+    <div class="sf-accordion__content" style="display: block; opacity: 1;">
+      <p class="sf-accordion__summary">
+      </p>
+      <p>Scientists around the world are working to find and develop treatments for COVID-19. </p>
+      <p>UNICEF CAMBODIA is supporting the Royal Government of Cambodia to keep families informed about the risks of COVID-19, 
+        keep children healthy and learning, and protected from sickness and violence. To learn more about UNICEF’s response to the COVID-19 pandemic in Cambodia,  
+        please read our latest situation report.</p>
+      <p>WHO does not recommend self-medication with any medicines, including antibiotics, as a prevention or cure for
+        COVID-19. WHO is coordinating efforts to develop treatments for COVID-19 and will continue to provide new
+        information as it becomes available.</p>
+      <p></p>
+    </div>
+  </div>
+</div>
+<style>
+  .video{
+    display: flex;
+    justify-content: space-between;
+  }
+  .case{
+    font-size: 40px;
+    line-height: 1.7;
+  }
+  
+</style>
+
+{% endblock %}

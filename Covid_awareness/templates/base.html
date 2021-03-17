@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<title>CovidCambodia</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+  body,
+  h1 {
+    font-family: "Raleway", sans-serif
+  }
+
+  body,
+  html {
+    height: 100%
+  }
+
+  .bgimg {
+    background-image: url('https://www.bdpinternational.com/uploads/attachments/ck6axr5izcptnksqp75lnejn5-update-images4.0.130.2500.1406.max.png');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .button {
+    background-color: #ffffff;
+    /* Green */
+    border: none;
+    color: rgb(56, 153, 245);
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .button5 {
+    background-color: black;
+    color: rgb(251, 251, 251);
+    border-radius: 10px;
+    border: 2px solid #555555;
+  }
+
+  .button5:hover {
+    background-color: white;
+    color: black;
+    transform: translateY(-5px);
+    
+  }
+
+  /*---------------------------------------------*/
+  .anc {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #ffffff;
+    font-weight: 500;
+    margin: 0px;
+    
+  }
+ 
+  .anc:focus {
+    outline: none !important;
+   
+  }
+
+  .anc:hover {
+    text-decoration: none;
+    color: #1d0707;
+    transform: translateY(-5px);
+  }
+
+  /*---------------------------------------------*/
+</style>
+
+<body>
+
+  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+    <div style="width:100%;display: block;padding: 20px;">
+      <div style="display: inline-block;float: left;">
+        <a class="anc" href='/' style="margin-right:30px">CovidCambodia</a>
+        <a class="anc" href='/hospital/' style="margin-right:30px">Hospital</a>
+        <a class="anc" href='/symtoms-analysis/' style="margin-right:30px">Symtoms Analysis</a>
+      </div> 
+      {% if request.user.is_authenticated %}
+      <div style="display: inline-block; float: right;">
+        <a href="/profile/">Hello, {{request.user.username}} !</a>
+        &nbsp;&nbsp;&nbsp;
+        <a class="anc" href='/signout/'>Signout</a>
+      </div>
+
+      {% else %}
+      <div style="margin:0;display: inline-block; float: right;">
+        <a class="anc" href='/signin/' style="float:right">Signin</a>
+        <a class="anc" href="#" style="float: right;">&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;</a>
+        <a class="anc" href='/signup/' style="float:right">Signup</a>
+      </div>
+      {% endif %}
+    </div>
+    <div style="padding: 50px 100px;">{% block content %}{% endblock %}</div>
+
+
+
+    <div class="w3-display-bottomleft" style="z-index: 1;">
+      Created by Yeansovanvathana and Thorn Theanlay
+    </div>
+  </div>
+
+</body>
+
+</html>
+

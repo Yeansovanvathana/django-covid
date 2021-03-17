@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .button {
+            background-color: rgba(255, 255, 255, 0);
+            border: #4CAF50 dotted 2px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #4CAF50;
+        }
+
+        .button3 {
+            border: #f44336 dotted 2px;
+            background-color: rgba(255, 255, 255, 0);
+        }
+
+        /* Red */
+        .button3:hover {
+            background-color: #f44336;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Watch for symptoms</h1>
+        <p>People with COVID-19 have had a wide range of symptoms reported – ranging from mild symptoms to severe illness.
+            Symptoms may appear 2-14 days after exposure to the virus. 
+            People with these symptoms may have COVID-19:</p>
+        <ul>Fever or chills</ul>
+        <ul>Cough</ul>
+        <ul>Shortness of breath or difficulty breathing</ul>
+        <ul>Fatigue</ul>
+        <ul>Muscle or body aches</ul>
+        <ul>Headache</ul>
+        <ul>New loss of taste or smell</ul>
+        <ul>Sore throat</ul>
+        <ul>Congestion or runny nose</ul>
+        <ul>Nausea or vomiting</ul>
+        <ul>Diarrhea</ul>
+
+
+    </div>
+    <center class="main"><b>Do you have the following symptoms?</b></center>
+    <form method="POST" action="/symtoms-analysis/">
+        {% csrf_token %}
+        <h1>Do you cough often lately?</h1>
+        <input type="radio" id="yes1" name="q1" value="Yes" required>
+        <label for="male">Yes</label><br>
+        <input type="radio" id="no1" name="q1" value="No" required>
+        <label for="female">No</label><br>
+        <h1>Do you have fever?</h1>
+        <input type="radio" id="yes1" name="q2" value="Yes" required>
+        <label for="male">Yes</label><br>
+        <input type="radio" id="no1" name="q2" value="No" required>
+        <label for="female">No</label><br>
+        <h1>Do you have difficulty in breathing lately?</h1>
+        <input type="radio" id="yes1" name="q3" value="Yes" required>
+        <label for="male">Yes</label><br>
+        <input type="radio" id="no1" name="q3" value="No" required>
+        <label for="female">No</label><br>
+        <h1>Do you have body ache?</h1>
+        <input type="radio" id="yes1" name="q4" value="Yes" required>
+        <label for="male">Yes</label><br>
+        <input type="radio" id="no1" name="q4" value="No" required>
+        <label for="female">No</label><br>
+        <input class="btn" type="submit" value="Submit">
+      </form> 
+
+</body>
+<style>
+    h1{
+        font-size: 20px;
+    }
+    .main{
+        font-size: 24px;
+        padding: 20px;
+    }
+    .btn{
+        margin-top: 20px;
+        display:inline-block;
+         padding:0.35em 1.2em;
+         border:0.1em solid #FFFFFF;
+         margin:0 0.3em 0.3em 0;
+         border-radius:0.12em;
+         box-sizing: border-box;
+         text-decoration:none;
+         font-family:'Roboto',sans-serif;
+         font-weight:300;
+         color:#FFFFFF;
+         text-align:center;
+         transition: all 0.2s;
+    }
+    .btn:hover{
+        color:white ;
+        background-color: rgb(21, 160, 253);
+    }
+</style>
+</html>
+
+{% endblock %}

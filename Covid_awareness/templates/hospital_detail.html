@@ -1,0 +1,334 @@
+{% extends 'base.html' %}
+{% block content %}
+<html>
+    <head>
+        <style>
+            table{
+                background-color: rgba(99, 100, 99, 0.8);
+                
+            }
+            tr,td,th{
+                font-size: 16px;
+                color:rgb(255, 255, 255);
+                border: solid 0.2px grey;
+                border-collapse: collapse;
+                text-align: center; 
+                vertical-align: middle;
+            }
+            th{
+                font-size: 20px;
+                font-weight: bolder;
+                padding: 20px;
+            }
+            td > a{
+                font-weight: 900;
+                text-decoration: none;
+            }
+            td > a:hover{
+                color:rgb(17, 17, 17);
+              
+                text-decoration: none;
+            }
+        </style>
+</head>
+<body>
+    
+    <h1>LIST OF ALL HOSPITAL IN CAMBODIA</h1>
+    
+<!-- <p>The grid-template property can be used as a shorthand property for the <em>grid-template-rows</em> and the <em>grid-template-columns</em> properties.</p>
+<p>This grid layout has three columns, and the first row is 150px high:</p> -->
+<table style="table-layout: fixed; width: 100%; font-size: 11px;">
+    <colgroup> 
+        <col style="table-layout: fixed; width: 120%; font-size: 11px;"> 
+        <col style="table-layout: fixed; width: 100%; font-size: 11px;"> 
+        <col style="table-layout: fixed; width: 100%; font-size: 11px;"> 
+        <col style="table-layout: fixed; width: 100%; font-size: 11px;"> 
+        <col style="table-layout: fixed; width: 50%; font-size: 11px;"> 
+        <col style="table-layout: fixed; width: 50%; font-size: 11px;"> 
+        <col style="table-layout: fixed; width: 120%; font-size: 11px;"> 
+    </colgroup>
+    <tbody>
+    <tr>
+    <th style="width: 227px;">Name</th>
+    <th style="width: 189px;">Location</th>
+    <th style="width: 188px;">Type</th>
+    <th style="width: 188px;">Specialty</th>
+    <th style="width: 92px;">Cost</th>
+    <th style="width: 92px;">Phone</th>
+    <th style="width: 226px;">Summary</th>
+    </tr>
+    <tr>
+    <td style="width: 227px;"><a href="https://www.facebook.com/pages/Apsara-phnom-penh-Clinic/278236675924286" rel="noopener" target="_blank" title="Apsara Phnom Penh Clinic">Apsara Phnom Penh Clinic</a>+</td>
+    <td style="width: 189px;">7 Makara</td>
+    <td style="width: 188px;">Clinic</td>
+    <td style="width: 188px;">General</td>
+    <td style="width: 92px;">$</td>
+    <td style="width: 92px;">023 218 583</td>
+    <td style="width: 226px;">Apsara is an unassuming local clinic. Most feedback on this facility is positive.</td>
+    </tr>
+    <tr>
+    <td style="width: 227px;"><a href="https://sihosp.org/" rel="noopener" target="_blank" title="Sihanouk Hospital Center of Hope">Sihanouk Hospital Center of Hope</a></td>
+    <td style="width: 189px;">7 Makara</td>
+    <td style="width: 188px;">Non-profit Hospital</td>
+    <td style="width: 188px;">Infectious diseases, HIV and TB</td>
+    <td style="width: 92px;">free</td>
+    <td style="width: 92px;">023 882 484</td>
+    <td style="width: 226px;">Run by US-based HOPE, this facility aims to help poor Cambodians.</td>
+    </tr>
+    <tr>
+    <td style="width: 227px;"><a href="https://malis-dental.com/en/" rel="noopener" target="_blank" title="Malis Dental Clinic">Malis Dental Clinic</a></td>
+    <td style="width: 189px;">7 Makara</td>
+    <td style="width: 188px;">Dental Clinic</td>
+    <td style="width: 188px;">Dentistry</td>
+    <td style="width: 92px;">$$</td>
+    <td style="width: 92px;">023 964 142</td>
+    <td style="width: 226px;">Malis hosts four dentists: two from Japan, one from Korean and one from Cambodia.</td>
+    </tr>
+    <tr>
+    <td style="width: 227px;"><a href="https://siclinic.com/en" rel="noopener" target="_blank" title="Sun International Clinic">Sun Int'l Clinic</a></td>
+    <td style="width: 189px;">BKK1</td>
+    <td style="width: 188px;">Clinic</td>
+    <td style="width: 188px;">General</td>
+    <td style="width: 92px;">$$</td>
+    <td style="width: 92px;">023&nbsp;956 777</td>
+    <td style="width: 226px;">SIC hosts Japanese doctors. They also prescribe Japanese approved medicine.</td>
+    </tr>
+    <tr>
+    <td style="width: 227px;"><a href="http://www.eurodentalcambodia.com/" rel="noopener" target="_blank" title="European Dental Clinic">European Dental Clinic</a></td>
+    <td style="width: 189px;">BKK1</td>
+    <td style="width: 188px;">Dental Clinic</td>
+    <td style="width: 188px;">Dentistry</td>
+    <td style="width: 92px;">$$$</td>
+    <td style="width: 92px;">012 340 393</td>
+    <td style="width: 226px;">European Dental was started by a French dentist and today has a staff of both foreigners and locals.</td>
+    </tr>
+    <tr>
+    <td style="width: 227px;"><a href="https://www.facebook.com/WesternPharmacy/" rel="noopener" target="_blank" title="Western Pharmacy">Western Pharmacy</a></td>
+    <td style="width: 189px;">BKK1</td>
+    <td style="width: 188px;">Pharmacy</td>
+    <td style="width: 188px;">&nbsp;</td>
+    <td style="width: 92px;">$$</td>
+    <td style="width: 92px;">023 220 606</td>
+    <td style="width: 226px;">Western Pharmacy was started by a Khmer-American pharmacist who was licensed in the US.</td>
+    </tr>
+    <tr>
+    <td style="width: 227px;"><a href="http://www.khmersoviethospital.org.kh/" rel="noopener" target="_blank" title="Khmer Soviet Friendship Hospital">Khmer Soviet Friendship Hospital</a>+</td>
+    <td style="width: 189px;">Chamkarmon</td>
+    <td style="width: 188px;">Public Hospital</td>
+    <td style="width: 188px;">General</td>
+    <td style="width: 92px;">$</td>
+    <td style="width: 92px;">023 217 524</td>
+    <td style="width: 226px;">The Khmer-Soviet Friendship Hospital was started with funding from the former Soviet Union. It is colloquially known as Russian Hospital.</td>
+    </tr>
+    <tr>
+    <td style="width: 227px;"><a href="https://mercymedcambodia.org/" rel="noopener" target="_blank" title="Mercy Medical Center">Mercy Medical Center</a></td>
+    <td style="width: 189px;">Chamkarmon</td>
+    <td style="width: 188px;">Christian Charity Clinic</td>
+    <td style="width: 188px;">Women's Health</td>
+    <td style="width: 92px;">$</td>
+    <td style="width: 92px;">097 850 0448</td>
+    <td style="width: 226px;">MMC, a faith-based medical organisation runs this health centre in Chamkarmon.</td>
+    </tr>
+    <tr>
+    <td style="width: 227px;"><a href="http://www.mcdc.com.kh/" rel="noopener" target="_blank" title="Master Care Dental Clinic">Master Care Dental Clinic</a></td>
+    <td style="width: 189px;">Chamkarmon</td>
+    <td style="width: 188px;">Dental Clinic</td>
+    <td style="width: 188px;">Dentistry</td>
+    <td style="width: 92px;">$$</td>
+    <td style="width: 92px;">016 820 081</td>
+    <td style="width: 226px;">Master Care has some dentists who were trained abroad. It gets many positive reviews for its affordability.</td>
+    </tr>
+    <tr>
+    <td style="width: 227px;"><a href="http://www.physiotherapy-phnompenh.com/welcome" rel="noopener" target="_blank" title="Physiotherapy Phnom Penh">Physiotherapy Phnom Penh</a></td>
+    <td style="width: 189px;">Chamkarmon and Daun Penh</td>
+    <td style="width: 188px;">Clinic</td>
+    <td style="width: 188px;">Physical therapy</td>
+    <td style="width: 92px;">$$</td>
+    <td style="width: 92px;">023 996 344</td>
+    <td style="width: 226px;">This therapy centre is run primarily by Dutch doctors and is well regarded for physiotherapy treatment.</td>
+    </tr>
+    <tr>
+    <td style="width: 227px;"><a href="https://roomchang.com/" rel="noopener" target="_blank" title="Roomchang Dental Hospital">Roomchang Dental Hospital</a></td>
+    <td style="width: 189px;">Chbar Ampov, Daun Penh, Sen Sok, and Tonle Bassac</td>
+    <td style="width: 188px;">Dental Clinic</td>
+    <td style="width: 188px;">Dentistry</td>
+    <td style="width: 92px;">$$</td>
+    <td style="width: 92px;">069 811 338</td>
+    <td style="width: 226px;">Roomchang has many locations around the city that all get good reviews.</td>
+    </tr>
+    <tr>
+    <td style="width: 227px;"><a href="http://www.sunrise-hs.com/" rel="noopener" target="_blank" title="Sunrise Japan Hospital Phnom Penh">Sunrise Japan Hospital Phnom Penh</a>+</td>
+    <td style="width: 189px;">Chroy Changvar</td>
+    <td style="width: 188px;">Hospital / Clinic</td>
+    <td style="width: 188px;">General, Neurology</td>
+    <td style="width: 92px;">$$</td>
+    <td style="width: 92px;">023 260 152</td>
+    <td style="width: 226px;">This Japan-run medical facility offers everything from emergency care to pediatrics. It is located in Chroy Changvar.</td>
+    </tr>
+    <tr>
+    <td style="width: 227px;"><a href="http://www.nagaclinic.com/" rel="noopener" target="_blank" title="Naga Clinic">Naga Clinic</a></td>
+    <td style="width: 189px;">Daun Penh</td>
+    <td style="width: 188px;">Clinic</td>
+    <td style="width: 188px;">General</td>
+    <td style="width: 92px;">$$</td>
+    <td style="width: 92px;">023 211 300</td>
+    <td style="width: 226px;">Led by French Dr Garon, Naga is right near Independence Monument. They are open 24 hours.</td>
+    </tr>
+    <tr>
+    <td style="width: 227px;"><a href="https://www.calmette.gov.kh/" rel="noopener" target="_blank" title="Calmette Hospital">Calmette Hospital</a>+</td>
+    <td style="width: 189px;">Daun Penh</td>
+    <td style="width: 188px;">Public Hospital</td>
+    <td style="width: 188px;">Surgery</td>
+    <td style="width: 92px;">$</td>
+    <td style="width: 92px;">012 772 789</td>
+    <td style="width: 226px;">Calmette was established jointly between France and Cambodia in 1950. Many Cambodians travel to the capital to get treatment here.</td>
+    </tr>
+    <tr>
+    <td style="width: 227px;"><a href="https://www.facebook.com/people/Ang-Duong-Hospital/100010330448013" rel="noopener" target="_blank" title="Ang Duong Hospital">Ang Duong Hospital</a>+</td>
+    <td style="width: 189px;">Daun Penh</td>
+    <td style="width: 188px;">Public Hospital</td>
+    <td style="width: 188px;">Ear and eye treatment</td>
+    <td style="width: 92px;">$</td>
+    <td style="width: 92px;">023 218 875</td>
+    <td style="width: 226px;">This is another state hospitals. It is known for ear, nose and eye treatment.</td>
+    </tr>
+    <tr>
+    <td style="width: 227px;"><a href="http://www.central-hospital.com/ch/" rel="noopener" target="_blank" title="Central Hospital">Central Hospital</a>+</td>
+    <td style="width: 189px;">Daun Penh</td>
+    <td style="width: 188px;">Private Hospital</td>
+    <td style="width: 188px;">General</td>
+    <td style="width: 92px;">$$$</td>
+    <td style="width: 92px;">023 214 955</td>
+    <td style="width: 226px;">This facility claims to be Cambodia's first modern private hospital. It has 80 beds, two delivery rooms and two operating theaters.</td>
+    </tr>
+    <tr>
+    <td style="width: 227px;"><a href="http://www.hwwmedcenters.org/en/" rel="noopener" target="_blank" title="Embassy Medical Center">Embassy Medical Center</a></td>
+    <td style="width: 189px;">Daun Penh</td>
+    <td style="width: 188px;">General Medicine</td>
+    <td style="width: 188px;">Women's Health, Pediatrics</td>
+    <td style="width: 92px;">$</td>
+    <td style="width: 92px;">017 490 650</td>
+    <td style="width: 226px;">Embassy is part of the HOPE network of facilities and has three different branches around Phnom Penh.</td>
+    </tr>
+    <tr>
+    <td style="width: 227px;"><a href="https://www.internationalsos.com/locations	" rel="noopener" target="_blank" title="International SOS Cambodia">International SOS Cambodia</a></td>
+    <td style="width: 189px;">Daun Penh</td>
+    <td style="width: 188px;">General Medicine</td>
+    <td style="width: 188px;">General</td>
+    <td style="width: 92px;">$$$</td>
+    <td style="width: 92px;">+66 2 205 7866</td>
+    <td style="width: 226px;">International SOS is a worldwide company, and they claim to offer Western-level health care. They have both foreign and local doctors.</td>
+    </tr>
+    <tr>
+    <td style="width: 227px;"><a href="https://www.rafflesmedicalgroup.com/international-clinics/locations/cambodia/phnom-penh	" rel="noopener" target="_blank" title="Raffles Medical Phnom Penh">Raffles Medical Phnom Penh</a></td>
+    <td style="width: 189px;">Daun Penh</td>
+    <td style="width: 188px;">Private Hospital</td>
+    <td style="width: 188px;">General</td>
+    <td style="width: 92px;">$$$</td>
+    <td style="width: 92px;">023 216 911</td>
+    <td style="width: 226px;">This Singaporean hospital is one of the top facilities in the country. Many upper-class Cambodians come here for medical treatment.</td>
+    </tr>
+    <tr>
+    <td style="width: 227px;"><a href="http://www.travellersmedicalclinic.com/" rel="noopener" target="_blank" title="Traveller's Medical Clinic">Traveller's Medical Clinic</a></td>
+    <td style="width: 189px;">Daun Penh</td>
+    <td style="width: 188px;">Clinic</td>
+    <td style="width: 188px;">Tropical ailments, STDs</td>
+    <td style="width: 92px;">$$</td>
+    <td style="width: 92px;">023 306 802</td>
+    <td style="width: 226px;">Traveller's Medical Clinic is a small office operated by a British doctor who has been practicing in Cambodia for many years.</td>
+    </tr>
+    <tr>
+    <td style="width: 227px;"><a href="http://www.pasteur-kh.org/" rel="noopener" target="_blank" title="Pasteur Institute">Pasteur Institute</a></td>
+    <td style="width: 189px;">Daun Penh</td>
+    <td style="width: 188px;">Research Hospital</td>
+    <td style="width: 188px;">Vaccinations, rabies</td>
+    <td style="width: 92px;">$$</td>
+    <td style="width: 92px;">012 812 003</td>
+    <td style="width: 226px;">IPC operates as a research hospital under the government. It is the only international vaccination centre in the country.</td>
+    </tr>
+    <tr>
+    <td style="width: 227px;"><a href="https://procarecambodia.com/" rel="noopener" target="_blank" title="Procare Medical">Procare Medical</a></td>
+    <td style="width: 189px;">Daun Penh</td>
+    <td style="width: 188px;">Medical Centre</td>
+    <td style="width: 188px;">General</td>
+    <td style="width: 92px;">$$$</td>
+    <td style="width: 92px;">061 828 410</td>
+    <td style="width: 226px;">Procare aims to provide international-level health care to everyone from babies to adults. Prices for regular visits are $40 for children or adults or $50 for babies.</td>
+    </tr>
+    <tr>
+    <td style="width: 227px;"><a href="https://www.beat-richner.ch/" rel="noopener" target="_blank" title="Kantha Bopha Hospital">Kantha Bopha Hospital</a>+</td>
+    <td style="width: 189px;">Daun Penh</td>
+    <td style="width: 188px;">Public Children's Hospital</td>
+    <td style="width: 188px;">Children's health</td>
+    <td style="width: 92px;">free</td>
+    <td style="width: 92px;">023 428 009</td>
+    <td style="width: 226px;">Established by Swiss pediatrician Beat Richner in 1992, Kantha Bopha is a free children's hospital. In 2018, Richner passed away and the hospital would come under state control.</td>
+    </tr>
+    <tr>
+    <td style="width: 227px;"><a href="http://www.dentaltouchcambodia.com/" rel="noopener" target="_blank" title="Dental Touch">Dental Touch</a></td>
+    <td style="width: 189px;">Daun Penh</td>
+    <td style="width: 188px;">Dental Clinic</td>
+    <td style="width: 188px;">Dentistry</td>
+    <td style="width: 92px;">$</td>
+    <td style="width: 92px;">012 854 408</td>
+    <td style="width: 226px;">Dental Touch is European Dental's sister clinic. It is a smaller facility that has slightly lower fees, in general. Both foreign and Khmer dentists work here as well.</td>
+    </tr>
+    <tr>
+    <td style="width: 227px;"><a href="http://pharmacie-delagare.com/en/" title="Pharmacie de la Gare">Pharmacie De La Gare</a></td>
+    <td style="width: 189px;">Daun Penh and BKK</td>
+    <td style="width: 188px;">Pharmacy</td>
+    <td style="width: 188px;">&nbsp;</td>
+    <td style="width: 92px;">$$</td>
+    <td style="width: 92px;">092 711 771</td>
+    <td style="width: 226px;">De La Gare is considered by expats to be the top pharmacy in the country. It stocks medicines brands from Europe and the US.</td>
+    </tr>
+    <tr>
+    <td style="width: 227px;"><a href="https://ucarepharmacy.com/" rel="noopener" target="_blank" title="U-Care Pharmacy">U-Care Pharmacy</a></td>
+    <td style="width: 189px;">Many locations across Phnom Penh</td>
+    <td style="width: 188px;">Pharmacy</td>
+    <td style="width: 188px;">&nbsp;</td>
+    <td style="width: 92px;">$$$</td>
+    <td style="width: 92px;">023 224 099</td>
+    <td style="width: 226px;">With almost 15 locations across the city, U-Care is usually the best place to go if you just need some headache medicine or something for a cold.</td>
+    </tr>
+    <tr>
+    <td style="width: 227px;"><a href="http://royalphnompenhhospital.com/" rel="noopener" target="_blank" title="Royal Phnom Penh Hospital">Royal Phnom Penh Hospital</a>+</td>
+    <td style="width: 189px;">Sen Sok</td>
+    <td style="width: 188px;">Private Hospital</td>
+    <td style="width: 188px;">General</td>
+    <td style="width: 92px;">$$$</td>
+    <td style="width: 92px;">023 991 000</td>
+    <td style="width: 226px;">Often considered one of the top hospitals in the country, Royal Phnom Penh Hospital is a Thai-backed enterprise. They have both Khmer and foreign doctors.</td>
+    </tr>
+    <tr>
+    <td style="width: 227px;"><a href="http://www.sensokiuh.com/en/" rel="noopener" target="_blank" title="Sen Sok International University Hospital">Sen Sok International University Hospital</a>+</td>
+    <td style="width: 189px;">Sen Sok</td>
+    <td style="width: 188px;">General Medicine</td>
+    <td style="width: 188px;">General</td>
+    <td style="width: 92px;">$$</td>
+    <td style="width: 92px;">023 883 713</td>
+    <td style="width: 226px;">Sen Sok University Hospital is a facility trusted by both locals and expats. There are one or two international doctors here.</td>
+    </tr>
+    <tr>
+    <td style="width: 227px;"><a href="http://www.khemaclinic.com/" rel="noopener" target="_blank" title="Khema Clinic">Khema Clinic</a></td>
+    <td style="width: 189px;">Toul Kork</td>
+    <td style="width: 188px;">Clinic</td>
+    <td style="width: 188px;">Maternity</td>
+    <td style="width: 92px;">$</td>
+    <td style="width: 92px;">023 880 949</td>
+    <td style="width: 226px;">Specialising in pre-natal care, Khema is popular with both local and foreign expectant mother in Cambodia.</td>
+    </tr>
+    <tr>
+    <td style="width: 227px;"><a href="http://www.dermatology-kossamak.com/" rel="noopener" target="_blank" title="Preah Kossamak Hospital">Preah Kossamak Hospital</a></td>
+    <td style="width: 189px;">Toul Kork</td>
+    <td style="width: 188px;">Public Hospital</td>
+    <td style="width: 188px;">Dermatology</td>
+    <td style="width: 92px;">$</td>
+    <td style="width: 92px;">023 883 047</td>
+    <td style="width: 226px;">Kossamak was expanded in 2014 with German and British funding. It attracts patients from the province, especially for skin-related ailments.</td>
+    </tr>
+    </tbody>
+    </table>
+</body>
+</html>
+{% endblock %}
